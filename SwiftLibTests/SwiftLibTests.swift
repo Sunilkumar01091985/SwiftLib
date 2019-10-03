@@ -11,10 +11,21 @@ import XCTest
 
 class SwiftLibTests: XCTestCase {
 
+    var swiftyLib : SwiftLib!
+    
     override func setUp() {
+        swiftyLib = SwiftLib()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
+    
+    func testAdd(){
+        XCTAssertEqual(swiftyLib.sumTwoNumber(firstNumber: 100, secoundNumber: 200), 300)
+    }
 
+    func testSub(){
+        XCTAssertEqual(swiftyLib.subTwoNumber(firstNumber: 200, secoundNumber: 100), 100)
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }

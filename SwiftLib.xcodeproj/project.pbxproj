@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43D60A8123462C4800BF0F94 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D60A8023462C4800BF0F94 /* SwiftyLib.swift */; };
 		43FFFF79234389EA0087D135 /* SwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FFFF6F234389EA0087D135 /* SwiftLib.framework */; };
 		43FFFF7E234389EA0087D135 /* SwiftLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFFF7D234389EA0087D135 /* SwiftLibTests.swift */; };
 		43FFFF80234389EA0087D135 /* SwiftLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 43FFFF72234389EA0087D135 /* SwiftLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43D60A8023462C4800BF0F94 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 		43FFFF6F234389EA0087D135 /* SwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FFFF72234389EA0087D135 /* SwiftLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLib.h; sourceTree = "<group>"; };
 		43FFFF73234389EA0087D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		43FFFF65234389EA0087D135 = {
 			isa = PBXGroup;
 			children = (
+				43D60A8023462C4800BF0F94 /* SwiftyLib.swift */,
 				43FFFF71234389EA0087D135 /* SwiftLib */,
 				43FFFF7C234389EA0087D135 /* SwiftLibTests */,
 				43FFFF8E234390050087D135 /* SwiftyLibExamples */,
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					43FFFF6E234389EA0087D135 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					43FFFF77234389EA0087D135 = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D60A8123462C4800BF0F94 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		43FFFF84234389EA0087D135 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		43FFFF85234389EA0087D135 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		43FFFF87234389EA0087D135 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JD33ZR6EU7;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		43FFFF88234389EA0087D135 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JD33ZR6EU7;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
